@@ -361,3 +361,57 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
 
 
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.3ms)
+UserMailer#welcome_email: processed outbound mail in 26.9ms
+Sent mail to admin@bananacoding.com (17.0ms)
+Date: Mon, 23 Apr 2018 11:25:09 +0700
+From: mju580410138@gmaejo.mju.ac.th
+To: admin@bananacoding.com
+Message-ID: <5add6025c0e9d_3e332b10f6d7e68c867e4@saharak.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5add6025c0228_3e332b10f6d7e68c86657";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5add6025c0228_3e332b10f6d7e68c86657
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Dove
+You have successfully signed up to example.com,
+your username is: Logintest.
+To login to the site, just follow this link: http://example.com/login.
+
+
+----==_mimepart_5add6025c0228_3e332b10f6d7e68c86657
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Dove</h1>
+You have successfully signed up to example.com,
+your username is: Logintest.<br>
+To login to the site, just follow this link: http://example.com/login.
+<p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_5add6025c0228_3e332b10f6d7e68c86657--
+
