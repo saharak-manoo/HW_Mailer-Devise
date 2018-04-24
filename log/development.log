@@ -3215,3 +3215,349 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:09:08 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 208ms (Views: 206.9ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 13:09:13 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+e6HG5vcBC5hyix7YrjebbzqtLSr2y1W+9nnIw8wvvN0nd1bYud8yGxBSnJt4eiBuHvcY5+eTHVV/s2BQZaJ+w=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.3ms)
+UserMailer#welcome_email: processed outbound mail in 27.2ms
+Sent mail to admin@bananacoding.com (18.4ms)
+Date: Tue, 24 Apr 2018 13:09:13 +0700
+From: mju580410138@gmaejo.mju.ac.th
+To: admin@bananacoding.com
+Message-ID: <5adeca0949789_41402b1d3e1c2d088893f@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adeca09486eb_41402b1d3e1c2d08888ca";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adeca09486eb_41402b1d3e1c2d08888ca
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adeca09486eb_41402b1d3e1c2d08888ca
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Homeindex</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:09:13+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adeca09486eb_41402b1d3e1c2d08888ca--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 134ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:09:13 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:09:29 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dX9Vj2V3WAfmTl8wi/i6JEnrNa3t+KG5o5f2k6gEQIoFG/ubmw7Jkk1SS79YE7Fxfvcpy6zS5NQVt01TiD4dCA==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dovess@ss.com"], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 06:09:29.818685"], ["sign_in_count", 2], ["updated_at", "2018-04-24 06:09:29.819609"], ["id", 13]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (73.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 13.3ms
+Sent mail to admin@bananacoding.com (11.5ms)
+Date: Tue, 24 Apr 2018 13:09:29 +0700
+From: mju580410138@gmaejo.mju.ac.th
+To: admin@bananacoding.com
+Message-ID: <5adeca19ded3f_41402b1d3e1c2c7c8917e@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adeca19de3ea_41402b1d3e1c2c7c890f0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adeca19de3ea_41402b1d3e1c2c7c890f0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adeca19de3ea_41402b1d3e1c2c7c890f0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Homeindex</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:09:29+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adeca19de3ea_41402b1d3e1c2c7c890f0--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 266ms (ActiveRecord: 75.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:09:29 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 13:09:46 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8hmeK+DSXc5osGVeoV3TSVSv7/6WXc+kJU+ttk/eawRh1W1LFW4ApdxI5amrtNZjraEKdnNaxQadc81rv2qXeQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 13.1ms
+Sent mail to admin@bananacoding.com (12.1ms)
+Date: Tue, 24 Apr 2018 13:09:46 +0700
+From: mju580410138@gmaejo.mju.ac.th
+To: admin@bananacoding.com
+Message-ID: <5adeca2ac774_41402b1d3e1c2bf089310@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adeca2abd9b_41402b1d3e1c2bf08928f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adeca2abd9b_41402b1d3e1c2bf08928f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adeca2abd9b_41402b1d3e1c2bf08928f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Homeindex</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:09:46+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adeca2abd9b_41402b1d3e1c2bf08928f--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:09:46 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:09:48 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ixjCdaNCBJizGmjolTw5VIQE9DdAabjluTUi2mRhJ7bo52f6IdzoD9StfWjaAgMOJL0DJ9S9/TSOvNWOTB639w==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dovess@ss.com"], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 06:09:48.385978"], ["last_sign_in_at", "2018-04-24 06:09:29.818685"], ["sign_in_count", 3], ["updated_at", "2018-04-24 06:09:48.386871"], ["id", 13]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (84.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.7ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 10.7ms
+Sent mail to admin@bananacoding.com (12.3ms)
+Date: Tue, 24 Apr 2018 13:09:48 +0700
+From: mju580410138@gmaejo.mju.ac.th
+To: admin@bananacoding.com
+Message-ID: <5adeca2c770e1_41402b1d3e1c2e20895cc@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adeca2c765a1_41402b1d3e1c2e2089436";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adeca2c765a1_41402b1d3e1c2e2089436
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adeca2c765a1_41402b1d3e1c2e2089436
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Homeindex</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:09:48+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adeca2c765a1_41402b1d3e1c2e2089436--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 269ms (ActiveRecord: 85.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:09:48 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:14:52 +0700
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 13:14:55 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TkUkwuL2/aR/0BTHn1QCJu3ah1WVcv0JaGF1gcLUNX81DVqo4eTqwgd0/MtlpNIs1/IZSdagD0akD8htmzBcZg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `login_email' for UserMailer:Class):
+  
+app/models/user.rb:14:in `login_email'

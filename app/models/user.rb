@@ -7,10 +7,10 @@ class User < ApplicationRecord
   after_create :welcome_email
   def welcome_email
     UserMailer.welcome_email(self).deliver
-  end     
+  end    
   
-  # after_index :welcome_email
-  # def welcome_email
-  #   UserMailer.welcome_email(self).deliver
-  # end    
+  after_commit :login_email
+  def login_email
+    UserMailer.login_email(self).deliver
+  end
 end
