@@ -12,11 +12,12 @@ class Users::SessionsController < Devise::SessionsController
 
   # POST /resource/sign_in
   def create
-    render plain: "H"
-    # def login_email
-      UserMailer.login_email(self).deliver
-    # end
-    
+    render plain: "Hello BananaCoding"
+   
+     def login_email
+        UserMailer.login_email(self).deliver
+     end
+
   end
 
   # DELETE /resource/sign_out
