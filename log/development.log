@@ -4236,3 +4236,27 @@ Content-Transfer-Encoding: 7bit
 Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-24 14:00:18 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Users::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 293ms (Views: 269.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 14:00:20 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0k2kfCs4lzmouvcN7qNA5ei03JBZ6DuAK3HnH8X8Pe+vg/Ly16pJzXJygzXUj4ZsntsolPCySzM3SDkQEra0TA==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+UserMailer#login_email: processed outbound mail in 88.8ms
+Completed 500 Internal Server Error in 253ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `email' for #<Users::SessionsController:0x00007f2d75b0a848>):
+  
+app/mailers/user_mailer.rb:10:in `login_email'
+app/controllers/users/sessions_controller.rb:17:in `create'
