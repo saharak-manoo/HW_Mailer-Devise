@@ -6,18 +6,16 @@ class Users::SessionsController < Devise::SessionsController
   # GET /resource/sign_in
   # def new
   #   super
-  #   @user = Admin.new(fname: "Dove", testemail: "admin@bananacoding.com", testlogin: "Logintest")
-  #   UserMailer.welcome_email(@user).deliver
+  #   def login_email
+  #     UserMailer.login_email(self).deliver
+  #  end
   # end
 
   # POST /resource/sign_in
-  # def create
-  #   # after_create :welcome_email
-  #   # def welcome_email
-  #   # UserMailer.welcome_email(self).deliver
-  #   # end   
-    
-  # end
+  def create
+    render 'home/index'
+    UserMailer.login_email(self).deliver
+  end
 
   # DELETE /resource/sign_out
   # def destroy
