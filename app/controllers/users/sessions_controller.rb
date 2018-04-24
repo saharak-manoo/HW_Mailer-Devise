@@ -15,7 +15,6 @@ class Users::SessionsController < Devise::SessionsController
   def create
     render 'home/index'
     UserMailer.login_email(self).deliver
-
   end
 
   # DELETE /resource/sign_out
