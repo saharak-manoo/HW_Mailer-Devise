@@ -8259,3 +8259,1468 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:34:08 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 260ms (Views: 245.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:34:42 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 73ms (Views: 54.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:34:43 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:38:30 +0700
+  
+LoadError (Unable to autoload constant Users::SessionsController, expected /home/saharak/Documents/Work/Work-Devise/HW_Devise/app/controllers/users/sessions_controller.rb to define it):
+  
+activesupport (5.2.0) lib/active_support/dependencies.rb:503:in `load_missing_constant'
+bootsnap (1.3.0) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0) lib/active_support/dependencies.rb:574:in `get'
+activesupport (5.2.0) lib/active_support/dependencies.rb:605:in `constantize'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:40:13 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 73ms (Views: 53.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:40:14 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m3L4134WSKXXiVWwk+iZ27da+OQo4nUWiiOtgWVULOLIobEKIWE1qj4e4zDDCj35dSfQpOdf8k6RCeGazlgdNA==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:40:15.053266"], ["last_sign_in_at", "2018-04-24 09:22:09.189188"], ["sign_in_count", 9], ["updated_at", "2018-04-24 09:40:15.055008"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (71.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (235.1ms)
+Completed 500 Internal Server Error in 270ms (Views: 192.6ms | ActiveRecord: 72.9ms)
+
+
+  
+SyntaxError (/home/saharak/Documents/Work/Work-Devise/HW_Devise/app/mailers/user_mailer.rb:11: unterminated string meets end of file
+/home/saharak/Documents/Work/Work-Devise/HW_Devise/app/mailers/user_mailer.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/mailers/user_mailer.rb:11: unterminated string meets end of file
+app/mailers/user_mailer.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/users/sessions_controller.rb:17:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:40:35 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m3L4134WSKXXiVWwk+iZ27da+OQo4nUWiiOtgWVULOLIobEKIWE1qj4e4zDDCj35dSfQpOdf8k6RCeGazlgdNA==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:40:35.856672"], ["last_sign_in_at", "2018-04-24 09:40:15.053266"], ["sign_in_count", 10], ["updated_at", "2018-04-24 09:40:35.860242"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (114.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (291.5ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#login_email: processed outbound mail in 31.6ms
+Sent mail to  (17.5ms)
+Date: Tue, 24 Apr 2018 16:40:36 +0700
+From: bananacoding@banana.com
+To: User.subscribed_users.pluck(:email)
+Message-ID: <5adefb9420217_79062adf17efe64435949@saharak.mail>
+Subject: Login email
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adefb941dd42_79062adf17efe6443588";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adefb941dd42_79062adf17efe6443588
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adefb941dd42_79062adf17efe6443588
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email : 
+<h3>Time : 2018-04-24T16:40:36+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adefb941dd42_79062adf17efe6443588--
+
+Completed 200 OK in 462ms (Views: 211.0ms | ActiveRecord: 116.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:42:30 +0700
+Processing by Users::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:42:30 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:42:32 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5fxOiakMGNakiZ9SJEFffQy+uOCV66UN1Fa+ib/moF8upz4bSENscsLmiYM10dCyYU1O3I9/rIP0cGJ2j90Nbw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:42:32 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:42:33 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jioCwqpDynTX85N9Wt7Y9++wqMcEjYxJIGBxHQmNm+O3gvFX6eOZH/zlRHXePi0XQSXSG0xnZnYPBPAKwNPQjQ==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:42:33.595960"], ["last_sign_in_at", "2018-04-24 09:40:35.856672"], ["sign_in_count", 11], ["updated_at", "2018-04-24 09:42:33.596666"], ["id", 17]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (77.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+Redirected to http://localhost:3000/
+Completed 302 Found in 238ms (ActiveRecord: 78.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:42:33 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:42:42 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:42:45 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oO2bNJGCmA89+cvnlA+QZhgjfjmxNPBB4wlElrS1VLwEyKmjVwiVdsY8ClCwLtY65o7dglmpHlOBqS/MQ8VLoQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:42:45 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:42:46 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2K5fD1zqqk1vY31LWtX0bVk8CWp/XGQrqkCnmLwztIwjqpQaKyq8uYk4mYM/amecWN+1YM9vYVqU/BmeciKzxg==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:42:46.683867"], ["last_sign_in_at", "2018-04-24 09:42:33.595960"], ["sign_in_count", 12], ["updated_at", "2018-04-24 09:42:46.684604"], ["id", 17]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (74.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+Redirected to http://localhost:3000/
+Completed 302 Found in 232ms (ActiveRecord: 76.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:42:46 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:43:01 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xQW5sLh8KO3ZrQZBcSLNpjuQx8tHTC4+NqjQ6evnDF386feWCawxJW0kBW1D7jhusesg48vKMu//rc7QNmxNQA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:43:01 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:43:03 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sSeJYcC/U4vpa+F1p0NeffZ4NDKLee2G+WPsBTXKeAZYwg+eSLL/Q7VKzVx7UkbK6vF1M12TLU5jAyKEZYZO6A==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:43:04.077705"], ["last_sign_in_at", "2018-04-24 09:42:46.683867"], ["sign_in_count", 13], ["updated_at", "2018-04-24 09:43:04.078889"], ["id", 17]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (106.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+Redirected to http://localhost:3000/
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (1.4ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#login_email: processed outbound mail in 18.3ms
+Sent mail to admin@bananacoding.com (15.8ms)
+Date: Tue, 24 Apr 2018 16:43:04 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adefc283699e_79062adf17efe554361b1@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adefc2835c64_79062adf17efe5543607a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adefc2835c64_79062adf17efe5543607a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adefc2835c64_79062adf17efe5543607a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email : 
+<h3>Time : 2018-04-24T16:43:04+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adefc2835c64_79062adf17efe5543607a--
+
+Completed 302 Found in 311ms (ActiveRecord: 107.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:43:04 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:43:21 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:43:23 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"h8CfK8DZ8aWoJtknVwDnfH8gCJRirOGZzgj81Oil953M8vwCOn4Mz1fhlm2Rf4Q18EYfB8mcIXfS7ZTTgbVgLA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:43:23 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:43:25 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"792ng3A/Oz1TD8B9/ZCSRxhzXXlpzpNv9YhApFBWLPTh9f7uV8h1unjn9/1Gjbj03+7zNjsmz0VR5gmwONCk3Q==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[36mUser Update (1.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:43:25.195997"], ["last_sign_in_at", "2018-04-24 09:43:04.077705"], ["sign_in_count", 14], ["updated_at", "2018-04-24 09:43:25.197342"], ["id", 17]]
+  ↳ app/controllers/users/sessions_controller.rb:17
+  [1m[35m (74.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/sessions_controller.rb:17
+Redirected to http://localhost:3000/
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (140.4ms)
+UserMailer#login_email: processed outbound mail in 148.0ms
+Completed 500 Internal Server Error in 386ms (ActiveRecord: 76.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007f43881bc740>):
+    1: <h1>Welcome to BananaCoding</h1>
+    2: <p>Test</p>
+    3: <h3>Email : <%= @user.email %> </h3>
+    4: <h3>Time : <%=DateTime.now%></h3>
+  
+app/views/user_mailer/login_email.html.erb:3:in `_app_views_user_mailer_login_email_html_erb___925345005597795825_69964012499000'
+app/mailers/user_mailer.rb:9:in `login_email'
+app/controllers/users/sessions_controller.rb:23:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:45:59 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 55ms (Views: 42.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:47:46 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 56ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:47:54 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:47:55 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:49:50 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:50:01 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:50:03 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SwlbN649dAxagP7f8y4fKcoqBQcknMYI3xyJbf2PoStFIQJaico6i3FoyV9IMzWaDberSHZ0miJ7csB5lQkpAg==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:50:03.822152"], ["last_sign_in_at", "2018-04-24 09:43:25.195997"], ["sign_in_count", 15], ["updated_at", "2018-04-24 09:50:03.822946"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (271.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (426.7ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#login_email: processed outbound mail in 18.1ms
+Sent mail to admin@bananacoding.com (14.1ms)
+Date: Tue, 24 Apr 2018 16:50:04 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adefdcc25bd7_79062adf17efe72036348@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adefdcc24dcc_79062adf17efe72036236";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adefdcc24dcc_79062adf17efe72036236
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adefdcc24dcc_79062adf17efe72036236
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email :  </h3>
+<h3>Time : 2018-04-24T16:50:04+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adefdcc24dcc_79062adf17efe72036236--
+
+Completed 200 OK in 503ms (Views: 187.3ms | ActiveRecord: 272.9ms)
+
+
+Started GET "/language?locale=th" for 127.0.0.1 at 2018-04-24 16:50:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/language"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:50:09 +0700
+Processing by Users::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:50:09 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:50:10 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:50:14 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Rwb6GcxzSgEhHXL+BjBwCsi1pGjRLGo/cFP2mqhiYFtIBB3QTgzzo78HMHYxMS/oMsNdaa+ZZAxf1n2OlpSyMA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:50:14 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:52:26 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:52:28 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ffZLXR07DHRQSOEgUeRCTrlCYNbMsoK45UrsS/Bo0Bo0PZcDNJ8zhGYw2CteYe9NXdYjgfoTJsp5LlhG2ztdkg==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:52:28.268603"], ["last_sign_in_at", "2018-04-24 09:50:03.822152"], ["sign_in_count", 16], ["updated_at", "2018-04-24 09:52:28.269341"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (55.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (208.7ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.3ms)
+UserMailer#login_email: processed outbound mail in 15.2ms
+Sent mail to admin@bananacoding.com (15.2ms)
+Date: Tue, 24 Apr 2018 16:52:28 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adefe5c5cdfc_79062adf17efe7ac365a9@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adefe5c5c33c_79062adf17efe7ac3645b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adefe5c5c33c_79062adf17efe7ac3645b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adefe5c5c33c_79062adf17efe7ac3645b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email :  </h3>
+<h3>Time : 2018-04-24T16:52:28+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adefe5c5c33c_79062adf17efe7ac3645b--
+
+Completed 200 OK in 281ms (Views: 191.0ms | ActiveRecord: 56.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:52:37 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:52:39 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A8Ao2op1ZK9TUAtQcSE16ARJYQzuaoMxyN7UxJT/ccP3skTImkuJHjk3sdp5P/8mpVAV71T2auWHVIfGpD7nyQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:52:39 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:52:41 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QPtg2hHITNm85DAFlqJHgDfIMUXztuaMdbxLMRQw6I4VJzv/0COi4tPY8lS9b6A9B4Mfp2u6C4gi6I1mppWvYg==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:52:42.113961"], ["last_sign_in_at", "2018-04-24 09:52:28.268603"], ["sign_in_count", 17], ["updated_at", "2018-04-24 09:52:42.114905"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (114.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (269.1ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#login_email: processed outbound mail in 18.5ms
+Sent mail to admin@bananacoding.com (18.0ms)
+Date: Tue, 24 Apr 2018 16:52:42 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adefe6a4805b_79062adf17efe72036798@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adefe6a47370_79062adf17efe7203668b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adefe6a47370_79062adf17efe7203668b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adefe6a47370_79062adf17efe7203668b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email :  </h3>
+<h3>Time : 2018-04-24T16:52:42+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adefe6a47370_79062adf17efe7203668b--
+
+Completed 200 OK in 355ms (Views: 200.7ms | ActiveRecord: 115.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:55:01 +0700
+Processing by Users::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:55:02 +0700
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:55:04 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cItVTHljxXZcM0Ot6G1J4v32kvSYquVsMABv0++3+g62eVAshJAFFWzhbhXn1/Aj1MPhPI/eErDJ+CW2oot5/g=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:55:04 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:55:05 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P9UwOwPfIr7HA8BAzRsp0InaH8y53za8lc3Nn92HojXTDVN9oBMHFk6oxR1tAqLIlZIyx50OPJookkuQMoECbA==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:55:06.124531"], ["last_sign_in_at", "2018-04-24 09:52:42.113961"], ["sign_in_count", 18], ["updated_at", "2018-04-24 09:55:06.125432"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (171.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (325.7ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#login_email: processed outbound mail in 9.9ms
+Sent mail to admin@bananacoding.com (15.7ms)
+Date: Tue, 24 Apr 2018 16:55:06 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adefefa566cf_79062adf17efe6443692f@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adefefa55e30_79062adf17efe6443689b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adefefa55e30_79062adf17efe6443689b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adefefa55e30_79062adf17efe6443689b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email :  </h3>
+<h3>Time : 2018-04-24T16:55:06+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adefefa55e30_79062adf17efe6443689b--
+
+Completed 200 OK in 402ms (Views: 196.4ms | ActiveRecord: 173.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:55:23 +0700
+Processing by Users::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:55:23 +0700
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 16:55:26 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0thCcMBTKyq6G6AACF0vIvU9WDZoCijOxmKBrZkeFTPVWNszL1ASdzRbRHX9UFA2TgEr6r/7lJJW/5vRdgFL7g=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:55:26 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:55:27 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8xARqGS1c+I0cbxThI8LmU8Ap3zNPqKXnE7ShzrBf5JJIl531nIBBTuE6OighIRpB0b6VCKH7TIijYMQK2ritw==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (7.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 09:55:27.890911"], ["last_sign_in_at", "2018-04-24 09:55:06.124531"], ["sign_in_count", 19], ["updated_at", "2018-04-24 09:55:27.891780"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (85.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (246.4ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (1.1ms)
+UserMailer#login_email: processed outbound mail in 13.3ms
+Sent mail to admin@bananacoding.com (17.5ms)
+Date: Tue, 24 Apr 2018 16:55:28 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adeff10a07e_79062adf17efe7ac3714a@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adeff10938f_79062adf17efe7ac370a5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adeff10938f_79062adf17efe7ac370a5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adeff10938f_79062adf17efe7ac370a5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email :  </h3>
+<h3>Time : 2018-04-24T16:55:28+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adeff10938f_79062adf17efe7ac370a5--
+
+Completed 200 OK in 323ms (Views: 196.9ms | ActiveRecord: 93.0ms)
+
+
+Started GET "/language?locale=th" for 127.0.0.1 at 2018-04-24 16:56:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/language"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-24 16:56:25 +0700
+Processing by Users::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 16:56:25 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 17:22:54 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 17:22:55 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lUvcgC+BMVZWm3eS6EWDmoCshNj042cT10n+3RtloAtyXEo+sLsq1XI9Px/OuvTGLdcv4BEFAkjph/pneZ//LQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 17:22:55 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 17:22:57 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e93O6ZjXO0U5VyiJipDpgepbjv6JQqLHs+KmAUivOeBJmnY1AqZGVUDbg391iMQr33l1g1Mxf+4EUQijAT9GEQ==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 10:22:58.073707"], ["last_sign_in_at", "2018-04-24 09:55:27.890911"], ["sign_in_count", 20], ["updated_at", "2018-04-24 10:22:58.074745"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:11
+  [1m[35m (85.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:11
+  Rendered home/index.html.erb within layouts/application (242.4ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#login_email: processed outbound mail in 15.2ms
+Sent mail to admin@bananacoding.com (16.7ms)
+Date: Tue, 24 Apr 2018 17:22:58 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adf058235a3c_79062adf17efe72037393@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adf0582344f7_79062adf17efe720372f9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adf0582344f7_79062adf17efe720372f9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adf0582344f7_79062adf17efe720372f9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email :  </h3>
+<h3>Time : 2018-04-24T17:22:58+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adf0582344f7_79062adf17efe720372f9--
+
+Completed 200 OK in 318ms (Views: 197.9ms | ActiveRecord: 86.9ms)
+
+
+Started GET "/language?locale=th" for 127.0.0.1 at 2018-04-24 17:23:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/language"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-24 17:23:01 +0700
+Processing by Users::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 17:23:01 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 17:23:04 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5JfQz16lUnwPpsLoMnqEqPpcvJqzkKSSr7UeX5WGDlJ/xug/MCzyDNjxFmDke9579VnMQMVQvBGrL8Csem8Umg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 17:23:04 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 17:26:30 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 58ms (Views: 43.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 17:26:32 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uw1zotpT6bu+PfnUhyQDv4ieZWfxVUzbyycNlYh0DfovWNzQ9TYOZ1sxJMNSuioR7wpf6ZPRlHOXM/Ar3QU0LA==", "user"=>{"email"=>"dove@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dove@g.com"], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/views/home/index.html.erb:8
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 10:26:32.383701"], ["last_sign_in_at", "2018-04-24 10:22:58.073707"], ["sign_in_count", 21], ["updated_at", "2018-04-24 10:26:32.384527"], ["id", 17]]
+  ↳ app/views/home/index.html.erb:8
+  [1m[35m (66.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (230.9ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#login_email: processed outbound mail in 11.6ms
+Sent mail to admin@bananacoding.com (29.5ms)
+Date: Tue, 24 Apr 2018 17:26:32 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5adf06587c51a_79062adf17efe554375dc@saharak.mail>
+Subject: Login to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adf06587ba00_79062adf17efe554374af";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adf06587ba00_79062adf17efe554374af
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding,
+You have successfully signed up to example.com,
+your username is:
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adf06587ba00_79062adf17efe554374af
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h3>Email :  </h3>
+<h3>Time : 2018-04-24T17:26:32+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adf06587ba00_79062adf17efe554374af--
+
+Completed 200 OK in 320ms (Views: 199.7ms | ActiveRecord: 68.4ms)
+
+
+Started GET "/users/sign_in?locale=th" for 127.0.0.1 at 2018-04-24 17:26:35 +0700
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"locale"=>"th"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 17:26:35 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index?locale=th" for 127.0.0.1 at 2018-04-24 17:26:37 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"th"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/index?locale=th" for 127.0.0.1 at 2018-04-24 17:26:37 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"th"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home/index?locale=th" for 127.0.0.1 at 2018-04-24 17:26:37 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"th"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/index?locale=en" for 127.0.0.1 at 2018-04-24 17:26:38 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/index?locale=en" for 127.0.0.1 at 2018-04-24 17:26:38 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/index?locale=en" for 127.0.0.1 at 2018-04-24 17:26:39 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home/index?locale=th" for 127.0.0.1 at 2018-04-24 17:26:39 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"th"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/index?locale=th" for 127.0.0.1 at 2018-04-24 17:27:16 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"th"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/index?locale=en" for 127.0.0.1 at 2018-04-24 17:27:28 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:8
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.3ms)
+
+
