@@ -7,4 +7,11 @@ class UserMailer < ApplicationMailer
     # mail(from: @user.email)
     mail(to: 'admin@bananacoding.com', subject: 'Welcome to Banana Coding')
     end
+    def login_email(user)
+        @user = user
+        # @url = 'http://example.com/login'
+    
+        # mail(from: @user.email)
+        mail(to: 'admin@bananacoding.com', subject: 'Welcome to Banana Coding')
+        end
     end
