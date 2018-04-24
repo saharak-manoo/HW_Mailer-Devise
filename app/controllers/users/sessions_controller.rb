@@ -12,10 +12,11 @@ class Users::SessionsController < Devise::SessionsController
 
   # POST /resource/sign_in
   # def create
-  #   after_create :welcome_email
-  #   def welcome_email
-  #   UserMailer.welcome_email(self).deliver
-  #   end   
+  #   # after_create :welcome_email
+  #   # def welcome_email
+  #   # UserMailer.welcome_email(self).deliver
+  #   # end   
+    
   # end
 
   # DELETE /resource/sign_out
