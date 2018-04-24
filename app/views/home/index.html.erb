@@ -1,12 +1,9 @@
 <h1><%=t('hello')%></h1>
 <p>Test</p>
-
-<a tabindex="-1" href="#"><i class="fa fa-commenting-o"></i> Switch language</a>
-<ul class="dropdown-menu">
-  <li><a href="/language?locale=th"><img src="/switch_language/flag-thailand.png" alt="flag-thailand">&nbsp;&nbsp; ภาษาไทย</a></li>
-  <li class="divider"></li>
-  <li><a href="/language?locale=en"><img src="/switch_language/flag-united-kingdom.png" alt="flag-thailand">&nbsp;&nbsp; English</a></li>
-</ul>
+<br>
+<%= link_to 'Switch To English', locale: :en%>
+<br>
+<%= link_to 'Switch To Thai', locale: :th%>
 
 <h1>Email : <%=current_user.email%></h1>	
 <h1>Status : <%=user_signed_in?%></h1>
