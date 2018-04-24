@@ -11,13 +11,13 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # POST /resource/sign_in
-  # def create
-  #   # after_create :welcome_email
-  #   # def welcome_email
-  #   # UserMailer.welcome_email(self).deliver
-  #   # end   
+  def create
+    render plain: "H"
+    # def login_email
+      UserMailer.login_email(self).deliver
+    # end
     
-  # end
+  end
 
   # DELETE /resource/sign_out
   # def destroy

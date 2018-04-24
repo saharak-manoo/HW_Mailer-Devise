@@ -3561,3 +3561,678 @@ Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
 NoMethodError (undefined method `login_email' for UserMailer:Class):
   
 app/models/user.rb:14:in `login_email'
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 13:23:09 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TkUkwuL2/aR/0BTHn1QCJu3ah1WVcv0JaGF1gcLUNX81DVqo4eTqwgd0/MtlpNIs1/IZSdagD0akD8htmzBcZg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (2.4ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#login_email: processed outbound mail in 35.8ms
+Sent mail to admin@bananacoding.com (20.4ms)
+Date: Tue, 24 Apr 2018 13:23:09 +0700
+From: mju580410138@gmaejo.mju.ac.th
+To: admin@bananacoding.com
+Message-ID: <5adecd4da52d0_442d2ae261cd2c38961aa@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adecd4da31aa_442d2ae261cd2c38960f3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adecd4da31aa_442d2ae261cd2c38960f3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adecd4da31aa_442d2ae261cd2c38960f3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:23:09+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adecd4da31aa_442d2ae261cd2c38960f3--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 187ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:23:09 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 229ms (Views: 227.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:23:12 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9unnjWhX5H5oGh19QjqVOVLyCyFH2dl4shd3d29RDCixdoc9Vk8j0Krhe/K3Y1lnFXszmhmh8h/eqSoLP5XlBA==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dovess@ss.com"], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 06:23:12.404316"], ["last_sign_in_at", "2018-04-24 06:09:48.385978"], ["sign_in_count", 4], ["updated_at", "2018-04-24 06:23:12.405266"], ["id", 13]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (98.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#login_email: processed outbound mail in 16.0ms
+Sent mail to admin@bananacoding.com (10.8ms)
+Date: Tue, 24 Apr 2018 13:23:12 +0700
+From: mju580410138@gmaejo.mju.ac.th
+To: admin@bananacoding.com
+Message-ID: <5adecd508063c_442d2ae261cd2b209636f@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5adecd507ec9a_442d2ae261cd2b20962fd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5adecd507ec9a_442d2ae261cd2b20962fd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5adecd507ec9a_442d2ae261cd2b20962fd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:23:12+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5adecd507ec9a_442d2ae261cd2b20962fd--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 99.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:23:12 +0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 13:42:30 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VYfQNsbP5w4joIOrEgkFSOgPDhx6+qTJrP5No0LTpPJZX8RNYz95Mbk78kQAt1cdb0LSEkmseUkYD8d7Wf623g=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.7ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#login_email: processed outbound mail in 11.8ms
+Sent mail to admin@bananacoding.com (13.5ms)
+Date: Tue, 24 Apr 2018 13:42:30 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5aded1d6bc406_442d2ae261cd2a94965f8@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5aded1d6bb35b_442d2ae261cd2a949641";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5aded1d6bb35b_442d2ae261cd2a949641
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5aded1d6bb35b_442d2ae261cd2a949641
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:42:30+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5aded1d6bb35b_442d2ae261cd2a949641--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 58ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:42:30 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:43:48 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4KlLZEIUUXvNRResUDl9ATq+agJ9XUdklzLcdUHnjLBVUmUShMjMzDTYoHnnQP6XQ9DrOMSjSc9qR+MHUt4Jg==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dovess@ss.com"], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 06:43:48.913258"], ["last_sign_in_at", "2018-04-24 06:23:12.404316"], ["sign_in_count", 5], ["updated_at", "2018-04-24 06:43:48.914058"], ["id", 13]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (90.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#login_email: processed outbound mail in 10.7ms
+Sent mail to admin@bananacoding.com (15.1ms)
+Date: Tue, 24 Apr 2018 13:43:49 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5aded2255039_442d2ae261cd2c38967a6@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5aded22543c6_442d2ae261cd2c38966fa";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5aded22543c6_442d2ae261cd2c38966fa
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5aded22543c6_442d2ae261cd2c38966fa
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:43:49+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5aded22543c6_442d2ae261cd2c38966fa--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 277ms (ActiveRecord: 91.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:43:49 +0700
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 13:43:55 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VElOzXob/8Ryq3WNedaNTIxzCbt2xBjGhg5Ps7dSJZPpSDqLLfQCIBV5C5KbpU7aDDeJ6UZChIh1zyVz19F8cQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (1.0ms)
+UserMailer#login_email: processed outbound mail in 15.0ms
+Sent mail to admin@bananacoding.com (14.4ms)
+Date: Tue, 24 Apr 2018 13:43:55 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5aded22b277f0_442d2ae261cd2b20969b5@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5aded22b26e25_442d2ae261cd2b20968a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5aded22b26e25_442d2ae261cd2b20968a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to BananaCoding, dovess@ss.com
+You have successfully signed up to example.com,
+your username is: dovess@ss.com.
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5aded22b26e25_442d2ae261cd2b20968a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+<h1>Email :  dovess@ss.com</h1>	
+
+<h3>Time : 2018-04-24T13:43:55+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5aded22b26e25_442d2ae261cd2b20968a--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:43:55 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:45:08 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lqiz+sdeDY3lURdCKZE5ah2NyDXKK3smCguAZhd+tqI3xSUBXvHIMgcF2drbkd8BLwVlxPLwCu/Mv3zKD3ktGw==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dovess@ss.com"], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-24 06:45:08.707131"], ["last_sign_in_at", "2018-04-24 06:43:48.913258"], ["sign_in_count", 6], ["updated_at", "2018-04-24 06:45:08.708572"], ["id", 13]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (91.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 269ms (ActiveRecord: 92.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:45:08 +0700
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-04-24 13:52:13 +0700
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gDMiGYrq/KZC/JaziAiZqgf1XlBEggqxdhORc4IhXgZ/9Pte4hurzb3MXHV0NRn/xRfi0Ekbl+DVN5jW8FwVlw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/saharak/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 13:52:13 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:52:17 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (92.5ms)
+UserMailer#login_email: processed outbound mail in 98.4ms
+Completed 500 Internal Server Error in 138ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007fa5760ea600>):
+    1: <h1>Welcome to BananaCoding</h1>
+    2: <p>Test</p>
+    3: <h1>Email :  <%= @user.email %></h1>	
+    4: 
+    5: <h3>Time : <%=DateTime.now%></h3>
+  
+app/views/user_mailer/login_email.html.erb:3:in `_app_views_user_mailer_login_email_html_erb___787957833622993427_70174311696300'
+app/mailers/user_mailer.rb:15:in `login_email'
+app/controllers/users/sessions_controller.rb:16:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:52:52 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.5ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:53:01 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:53:42 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:54:26 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (138.0ms)
+UserMailer#login_email: processed outbound mail in 145.9ms
+Completed 500 Internal Server Error in 158ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007fa576743e20>):
+    1: <h1>Welcome to BananaCoding</h1>
+    2: <p>Test</p>
+    3: # <h1>Email :  <%= @user.email %></h1>	
+    4: 
+    5: <h3>Time : <%=DateTime.now%></h3>
+  
+app/views/user_mailer/login_email.html.erb:3:in `_app_views_user_mailer_login_email_html_erb___787957833622993427_70174197936380'
+app/mailers/user_mailer.rb:15:in `login_email'
+app/controllers/users/sessions_controller.rb:17:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:54:56 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (88.9ms)
+UserMailer#login_email: processed outbound mail in 96.5ms
+Completed 500 Internal Server Error in 98ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007fa5645e0bd0>):
+    1: <h1>Welcome to BananaCoding</h1>
+    2: <p>Test</p>
+    3: # <h1>Email :  <%= @user.email %></h1>	
+    4: 
+    5: <h3>Time : <%=DateTime.now%></h3>
+  
+app/views/user_mailer/login_email.html.erb:3:in `_app_views_user_mailer_login_email_html_erb___787957833622993427_70174164995180'
+app/mailers/user_mailer.rb:15:in `login_email'
+app/controllers/users/sessions_controller.rb:17:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:55:01 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.1ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (95.9ms)
+UserMailer#login_email: processed outbound mail in 105.6ms
+Completed 500 Internal Server Error in 108ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007fa56469ad00>):
+    1: <h1>Welcome to BananaCoding</h1>
+    2: <p>Test</p>
+    3: # <h1>Email :  <%= @user.email %></h1>	
+    4: 
+    5: <h3>Time : <%=DateTime.now%></h3>
+  
+app/views/user_mailer/login_email.html.erb:3:in `_app_views_user_mailer_login_email_html_erb___787957833622993427_70174165257840'
+app/mailers/user_mailer.rb:15:in `login_email'
+app/controllers/users/sessions_controller.rb:17:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:55:04 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (89.3ms)
+UserMailer#login_email: processed outbound mail in 96.7ms
+Completed 500 Internal Server Error in 116ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007fa5684ca5d0>):
+    1: <h1>Welcome to BananaCoding</h1>
+    2: <p>Test</p>
+    3: # <h1>Email :  <%= @user.email %></h1>	
+    4: 
+    5: <h3>Time : <%=DateTime.now%></h3>
+  
+app/views/user_mailer/login_email.html.erb:3:in `_app_views_user_mailer_login_email_html_erb___787957833622993427_70174198183820'
+app/mailers/user_mailer.rb:15:in `login_email'
+app/controllers/users/sessions_controller.rb:17:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:55:37 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.1ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (104.9ms)
+UserMailer#login_email: processed outbound mail in 113.5ms
+Completed 500 Internal Server Error in 116ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007fa575360c28>):
+    1: <h1>Welcome to BananaCoding</h1>
+    2: <p>Test</p>
+    3: # <h1>Email :  <%= @user.email %></h1>	
+    4: 
+    5: <h3>Time : <%=DateTime.now%></h3>
+  
+app/views/user_mailer/login_email.html.erb:3:in `_app_views_user_mailer_login_email_html_erb___787957833622993427_70174306109520'
+app/mailers/user_mailer.rb:15:in `login_email'
+app/controllers/users/sessions_controller.rb:17:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:55:53 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (92.9ms)
+UserMailer#login_email: processed outbound mail in 106.7ms
+Completed 500 Internal Server Error in 110ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Users::SessionsController:0x00007fa57609a718>):
+    1: # Welcome to BananaCoding, <%= @user.email %>
+    2: You have successfully signed up to example.com,
+    3: # your username is: <%= @user.email %>.
+    4: To login to the site, just follow this link: <%= @url %>.
+  
+app/views/user_mailer/login_email.text.erb:1:in `_app_views_user_mailer_login_email_text_erb___3564067161014341341_70174312569500'
+app/mailers/user_mailer.rb:15:in `login_email'
+app/controllers/users/sessions_controller.rb:17:in `create'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-24 13:56:12 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgHp3EcB9VRc36458eWOjnSC3bR6NigvMcG5rv5JhXZLz79Su5MroIYX2gHLyUgHAu0psNNsWJwt+GehKQMM1Q==", "user"=>{"email"=>"dovess@ss.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering text template
+  Rendered text template (0.0ms)
+  Rendering user_mailer/login_email.html.erb within layouts/mailer
+  Rendered user_mailer/login_email.html.erb within layouts/mailer (0.8ms)
+  Rendering user_mailer/login_email.text.erb within layouts/mailer
+  Rendered user_mailer/login_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#login_email: processed outbound mail in 22.1ms
+Sent mail to admin@bananacoding.com (22.4ms)
+Date: Tue, 24 Apr 2018 13:56:12 +0700
+From: bananacoding@banana.com
+To: admin@bananacoding.com
+Message-ID: <5aded50cdc2d6_442d2ae261cd2bac971d9@saharak.mail>
+Subject: Welcome to Banana Coding
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5aded50cda323_442d2ae261cd2bac970bd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5aded50cda323_442d2ae261cd2bac970bd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+You have successfully signed up to example.com,
+
+To login to the site, just follow this link: .
+
+
+----==_mimepart_5aded50cda323_442d2ae261cd2bac970bd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to BananaCoding</h1>
+<p>Test</p>
+
+
+<h3>Time : 2018-04-24T13:56:12+07:00</h3>
+
+  </body>
+</html>
+
+----==_mimepart_5aded50cda323_442d2ae261cd2bac970bd--
+
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+

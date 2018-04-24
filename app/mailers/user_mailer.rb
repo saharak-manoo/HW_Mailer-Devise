@@ -1,17 +1,11 @@
 class UserMailer < ApplicationMailer
-    default from: 'mju580410138@gmaejo.mju.ac.th'
+    default from: 'bananacoding@banana.com'
     def welcome_email(user)
     @user = user
-    # @url = 'http://example.com/login'
-
-    # mail(from: @user.email)
     mail(to: 'admin@bananacoding.com', subject: 'Welcome to Banana Coding')
     end
     def login_email(user)
         @user = user
-        # @url = 'http://example.com/login'
-    
-        # mail(from: @user.email)
         mail(to: 'admin@bananacoding.com', subject: 'Welcome to Banana Coding')
         end
     end

@@ -9,8 +9,8 @@ class User < ApplicationRecord
     UserMailer.welcome_email(self).deliver
   end    
   
-  after_commit :login_email
-  def login_email
-    UserMailer.login_email(self).deliver
-  end
+  # after_commit :login_email
+  # def login_email
+  #   UserMailer.login_email(self).deliver
+  # end
 end
