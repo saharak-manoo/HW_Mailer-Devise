@@ -9,7 +9,7 @@ class User < ApplicationRecord
     UserMailer.welcome_email(self).deliver
   end    
   
-  # after_commit :login_email
+  # after_commit :login_email, on: [:create, :update]
   # def login_email
   #   UserMailer.login_email(self).deliver
   # end

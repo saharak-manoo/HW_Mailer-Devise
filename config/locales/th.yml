@@ -30,4 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 th:
-  hello: "ยินดีต้อนรับ"
+  hello: "ยินดีต้อนรับสู่ บานาน่าโค้ดดิ้ง"
+  email: "อีเมล์"
+  status: "สถานะการล็อคอิน"
+  time: "เวลาที่ทำการล็อคอิน"
