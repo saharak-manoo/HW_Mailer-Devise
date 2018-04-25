@@ -35,3 +35,4 @@ en:
   status: "Status"
   time: "Login Time"
   alert: "Login to BananaCoding"
+  sign_out: "Sign out"
